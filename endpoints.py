@@ -350,7 +350,7 @@ def api_endpoints(app):
             }
         return jsonify({'response': response})
 
-    @app.route('/api/flights/<flightNumber>', methods=['GET'])
+    @app.route('/api/flight/<flightNumber>', methods=['GET'])
     def getFlight(flightNumber):
         try:
             query = {
